@@ -28,6 +28,7 @@ def opciones():
                 print("Por favor, ingresa una opción válida.")
                 continue
             
+            #Crear un usuario y contraseña
             if opcion == 1:
                     mail = input("Ingrese su usuario: ")
                     password = input("Ingrese su contraseña: ")
@@ -44,6 +45,7 @@ def opciones():
                             })
                         print("¡Datos guardados con éxito!")
             
+            #Mostrar lista 
             if opcion == 2:
                 if datos:
                     print("Lista de usuarios:")
@@ -52,17 +54,20 @@ def opciones():
                 else: 
                     print(f'No hay datos guardados')
 
+            #Borrar un usuario
             if opcion == 3:
                 if datos:
                     advertencia = input("¿Estás seguro que querés eliminar los datos? S/N ")
                     if advertencia == "S":
                         datos.clear()
                         print("¡Datos eliminados!")
-                    if advertencia == "N":
-                        print("¡Operación cancelada!")
+                    elif advertencia == "N":
+                            print("¡Operación cancelada!")
+                    else:
+                        print("Opción no valida.")
                 else:
                     print("No hay datos para eliminar")         
-            
+            #Salir del programa
             if opcion == 4:
                 print("Saliendo del sistema...")   
                 break             
