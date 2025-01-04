@@ -13,29 +13,10 @@ def inventario():
 
     productos = []
 
-    while True:
-        
-        opcion = input("Ingrese una opcion: ")
-        #Verifica errores
-        try:
-            opcion = int(opcion)
-            if opcion not in [1, 2, 3, 4, 5, 6]:
-                print("Esa opción no está disponible.")
-                continue	
-        except ValueError:
-            print("Por favor, ingese una opción valida.")
-            continue
-        except SyntaxError:
-            print("Por favor, ingrese una opción valida.")
-            continue
-
-
-           
-        
-            #FUNCIONES
+     #FUNCIONES
 
         # Agregar producto
-        def agregar_producto():
+    def agregar_producto():
             nombre = input("Ingrese el nombre del producto: ")
             precio = input("Ingrese el precio por unidad: $")
             cantidad = input("Ingrese el stock disponible: ")
@@ -54,7 +35,7 @@ def inventario():
 
        
         #Ver inventario
-        def leer_productos():
+    def leer_productos():
             try:
                 with open('productos.txt', 'r') as archivo:
                     for linea in archivo.readlines():
@@ -64,7 +45,7 @@ def inventario():
     
 
         #Calcular valor
-        def calcular_total():
+    def calcular_total():
             valor_total  = 0
             for producto in productos:
                 valor_total += float(producto["precio"])
@@ -72,7 +53,7 @@ def inventario():
         
 
         #Buscar producto    
-        def buscar_producto():
+    def buscar_producto():
             nombre_producto = input("Ingrese el nombre del producto a buscar: ")
             encontrado = False
             for producto in productos: 
@@ -85,7 +66,7 @@ def inventario():
                 
         
         #Borrar producto
-        def borrar_producto():
+    def borrar_producto():
             nombre_a_borrar = input("Ingrese el nombre del producto a borrar: ")
             for producto in productos[:]:
                 if producto["nombre"] == nombre_a_borrar:
@@ -97,6 +78,22 @@ def inventario():
                     print("Producto borrado con éxito.")
                     return
             print("Producto no encontrado.")
+
+    while True:
+        
+        opcion = input("Ingrese una opcion: ")
+        #Verifica errores
+        try:
+            opcion = int(opcion)
+            if opcion not in [1, 2, 3, 4, 5, 6]:
+                print("Esa opción no está disponible.")
+                continue	
+        except ValueError:
+            print("Por favor, ingese una opción valida.")
+            continue
+        except SyntaxError:
+            print("Por favor, ingrese una opción valida.")
+            continue
 
 
             #Condiciones
