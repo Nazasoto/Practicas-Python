@@ -35,6 +35,7 @@ def opciones():
                     #Verifica que los campos no esten vacios
                     if mail == "" or password == "":
                      print("Por favor, ingrese datos validos")
+                     #Verifica si el usuario ya existe
                     elif any(dato["user"] == mail for dato in datos):
                         print("El usuario ya existe. Ingrese uno diferente.")
                     else:    
