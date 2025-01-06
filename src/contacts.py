@@ -54,7 +54,7 @@ def agenda_de_contactos():
         try:
             with open("contactos.json", "w") as archivo:
                 json.dump(contactos, archivo)
-            print("Contacto agregado con éxito")
+            print("¡Contacto agregado con éxito!")
         except Exception as e:
             print("Error: ", e)
 
