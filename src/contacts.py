@@ -44,7 +44,7 @@ def agenda_de_contactos():
         # Verifica si el contacto ya existe
         for contacto in contactos:
             if contacto["nombre"] == nombre and contacto["telefono"] == telefono and contacto["email"] == email:
-                print("Error: contacto ya existe")
+                print("Error: ¡este contacto ya existe!")
                 return
 
         # Agrega el contacto a la lista
