@@ -1,6 +1,6 @@
-<font color="#008000"># PRACTICAS DE PYTHON</font>
+# PRACTICAS DE PYTHON
 _______________________________________________________________________________________________________________________
-numeros.py: Es un juego donde el usuario debe adivinar un numero del 1 al 200
+numeros.py: Es un juego donde el usuario debe adivinar un numero del 1 al 200 <br>
 Conceptos: Bucle (While), manejo de errores (Try-except) y condicionales (if, elif, else) 
 _______________________________________________________________________________________________________________________
 dates.py: Hice un programa para almacenar, mostrar y eliminar datos (usuario y contraseña). <br>
