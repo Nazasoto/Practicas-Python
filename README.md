@@ -1,4 +1,5 @@
-<font color="green"># PRACTICAS DE PYTHON</font>
+<font color="#008000"># PRACTICAS DE PYTHON</font>
+_______________________________________________________________________________________________________________________
 numeros.py: Es un juego donde el usuario debe adivinar un numero del 1 al 200
 Conceptos: Bucle (While), manejo de errores (Try-except) y condicionales (if, elif, else) 
 _______________________________________________________________________________________________________________________
